@@ -48,6 +48,8 @@
 ## ● 레포지토리 다운로드 및 Tailwind CSS 설치
 이 Github 레포지토리를 로컬에 다운로드 받아 압축을 풀고 나오는 폴더를 VS Code에서 엽니다.
 
+![](./README_IMG/download-repo.png)
+
 ### Tailwind CSS 모듈 설치
 Tailwind CSS 모듈설치에 필요한 모든 것들은 이미 `package.json`에 명시되어있습니다. 
 
@@ -58,6 +60,7 @@ npm install
 ~~~
 > 명령어 실행위치는 `package.json`파일이 위치한 레포지토리 폴더여야합니다. VS Code에서 레포지토리를 정상적으로 열었다면 해당 위치일 것입니다.
 
+설치가 완료되면 `node_modules`폴더가 생성되고 그 안에 모든 모듈이 다운로드 받아진 것을 볼 수 있습니다.
 
 
 
