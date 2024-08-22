@@ -104,3 +104,30 @@ npm run tailwind
 이제 `index.html` 파일을 수정하고 저장 할 때마다 열려있는 웹브라우저가 자동으로 리로드되는 것을 볼 수 있습니다.
 
 Live Server로 웹페이지가 열리면 위 2)번에서의 자동빌드 프로세스가 실행중이 아니더라도 웹브라우저가 자동 리로드는 될 것이지만, Tailwind 아웃풋파일이 빌드되지 않으면 새롭게 추가하는 CSS 클래스명은 반영되지 않을 것이므로 2)와 함께 쓰시기 바랍니다.
+
+## ● 추가 추천 사항 선택
+
+### inline fold 확장
+Tailwind CSS 는 HTML 파일의 `class` 값이 많아지면서 줄이 매우 길어지는 특징이 있습니다. 그에따라 class 값만 코드를 folding 해서 보고 싶을 것입니다. VS Code에는 이를 위한 확장이 여럿있으므로 선택해서 사용 해보세요.
+
+### Automatic Sorting
+ 모든 html 문서의 모든 DOM Elements에 거쳐 적용된 CSS Rule의 순서는 일관성을 갖는 것이 좋습니다. 그렇지 않다면 CSS 디버깅이 어려워질 수 있습니다. 
+
+ Tailwind CSS의 Utility Class들 또한 CSS Rule 임에따라 이것들의 작성순서를 맞추는게 좋으므로 [Automatic Sorting](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)이 권장됩니다. 
+
+ 다음 중 하나의 방법으로 클래스를 재정렬 해보세요.
+
+ #### 1) npm run prettier 명령어
+본 레포지토리에는 Prettier의 설정파일인 `prettier.config.js`에 `prettier-plugin-tailwindcss`플러그인 설정이 추가되어 있으며 축약 명령어가 세팅 되어 있습니다. 터미널에서 다음 명령어를 입력하면 html 포매팅과 함께 `class=""` 내부의 클래스명들이 재정렬 됩니다.
+~~~
+npm run prettier
+~~~
+> 현재 터미널에서 이미 웃풋파일 자동빌드 프로세스가 실행중일 것이므로 새로운 터미널 창을 열어서 사용해보세요. 
+
+ #### 2) Prettier VS Code 확장
+VS Code의 확장으로 `Prettier - Code formatter` by Pretter 확장이 있습니다.  관련 설정은 이미 1)에서 세팅되어있으므로 이 확장을 설치하면 손쉽게 단축키로 코드 포맷팅과 함께 Tailwind CSS 클래스 재정렬을 수행 할 수 있습니다. 
+
+### 3) Headwind 확장 
+위 1)과 2)는 [Prettier](https://prettier.io/) 코드 포매팅을 이용해서 Tailwind CSS 클래스 재정렬을 하는 것입니다. Prettier는 다양한 언어의 포매팅을 설정해서 사용할 수 있지만 Prettier 사용자가 아니라면 자신이 사용하는 포매팅툴과 포맷양식이 달라 마음에 들지 않을 수 있습니다. 혹은 설정을 따로 맞춰야 하는 번거로움이 있을 것입니다.
+
+ VS Code의 [Headwind](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind) 확장은 포매팅과 무관하게 CSS `class` 값만을 재정렬 해줍니다. html문서를 저장하는 순간 혹은 단축키를 통해 Tailwind CSS 클래스를 재정렬 할 수 있습니다.

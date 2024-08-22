@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "tailwind": "tailwindcss -i ./src/input.css -o ./public/style.css --watch"
+    "tailwind": "tailwindcss -i ./src/input.css -o ./public/style.css --watch",
+    "prettier": "npx prettier --write ./public/*.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.6.6",
     "tailwindcss": "^3.4.10"
   }
 }
