@@ -117,17 +117,17 @@ Tailwind CSS 는 HTML 파일의 `class` 값이 많아지면서 줄이 매우 길
 
  다음 중 하나의 방법으로 클래스를 재정렬 해보세요.
 
- #### 1) npm run prettier 명령어
+#### 1) npm run prettier 명령어
 본 레포지토리에는 Prettier의 설정파일인 `prettier.config.js`에 `prettier-plugin-tailwindcss`플러그인 설정이 추가되어 있으며 축약 명령어가 세팅 되어 있습니다. 터미널에서 다음 명령어를 입력하면 html 포매팅과 함께 `class=""` 내부의 클래스명들이 재정렬 됩니다.
 ~~~
 npm run prettier
 ~~~
 > 현재 터미널에서 이미 웃풋파일 자동빌드 프로세스가 실행중일 것이므로 새로운 터미널 창을 열어서 사용해보세요. 
 
- #### 2) Prettier VS Code 확장
+#### 2) Prettier VS Code 확장
 VS Code의 확장으로 `Prettier - Code formatter` by Pretter 확장이 있습니다.  관련 설정은 이미 1)에서 세팅되어있으므로 이 확장을 설치하면 손쉽게 단축키로 코드 포맷팅과 함께 Tailwind CSS 클래스 재정렬을 수행 할 수 있습니다. 
 
-### 3) Headwind 확장 
+#### 3) Headwind 확장 
 위 1)과 2)는 [Prettier](https://prettier.io/) 코드 포매팅을 이용해서 Tailwind CSS 클래스 재정렬을 하는 것입니다. Prettier는 다양한 언어의 포매팅을 설정해서 사용할 수 있지만 Prettier 사용자가 아니라면 자신이 사용하는 포매팅툴과 포맷양식이 달라 마음에 들지 않을 수 있습니다. 혹은 설정을 따로 맞춰야 하는 번거로움이 있을 것입니다.
 
  VS Code의 [Headwind](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind) 확장은 포매팅과 무관하게 CSS `class` 값만을 재정렬 해줍니다. html문서를 저장하는 순간 혹은 단축키를 통해 Tailwind CSS 클래스를 재정렬 할 수 있습니다.
